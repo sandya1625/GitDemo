@@ -12,10 +12,13 @@ public class miscellaneous {
 		WebDriver driver=new ChromeDriver();
 		//give the URL
 		driver.get("http://facebook.com");
+		System.out.println("facebook is opened");
 		driver.findElement(By.xpath("id('email')")).sendKeys("fsfd");
 		driver.manage().window().maximize();
+		System.out.println("window is maximized");
 		driver.manage().deleteAllCookies();
-		driver.get("http://google.com");
+		 driver.get("http://google.com");
+		System.out.println("google is opened");
 	
 
 	}
